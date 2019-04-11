@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="rotablestringcolor">#585050</color>
+    <color name="color">#7c7474</color>
+    <color name="color_blackish">#2d2c2c</color>
+    <color name="card_color_left">#b39ddb</color>
+    <color name="card_color_right">#b3e5fc</color>
+    <color name="colorTransparent">#00000000</color>
+
+    <color name="tabsScrollColor">#8a140e</color>
+</resources>

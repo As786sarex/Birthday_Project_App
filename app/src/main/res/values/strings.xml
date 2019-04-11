@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Birthday</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_secret_massage">A Secret Massage</string>
+    <string name="camera">Camera</string>
+    <string name="Music">Music</string>
+    <string name="Assistant">Assistant</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Music_menu">Music For You</string>
+    <string name="Your_photos">Your Photos</string>
+    <string name="your_assistant">Your Assistant</string>
+    <string name="Assistant_Welcome_msg">Welcome,how can I help you?</string>
+    <string name="add_image">Add Photo</string>
+
+
+    <string name="DataBaseName">RandomPlayer</string>
+
+    <string name="DataBaseName_Version">1.0</string>
+
+    <string name="descBackward">Prev Button</string>
+
+    <string name="descForward">Next Button</string>
+
+    <string name="timeProgressDefault">0:00</string>
+    <string name="longShortcut">Some Music For You</string>
+    <string name="shortShortcut">Your Music</string>
+    <string name="channel_name">default</string>
+    <string name="channel_description">default</string>
+    <string name="Random_lorem">Contrary to popular belief, Lorem Ipsum is not simply random text.\n
+        It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.\n
+        Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.\n\n
+        Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance.\n\n
+        The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.\n
+
+        The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.\n\n
+        Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.\n\n</string>
+
+</resources>

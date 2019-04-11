@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.AssistantFragment">
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/AssistantChatRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="70dp"
+        android:padding="4dp"
+        android:paddingBottom="10dp" />
+
+
+    <RelativeLayout
+        android:id="@+id/rel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        >
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/microphoneButton"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerHorizontal="true"
+            app:lottie_fileName="data.json"
+            android:hapticFeedbackEnabled="true"
+
+
+            />
+    </RelativeLayout>
+
+</FrameLayout>

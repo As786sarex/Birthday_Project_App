@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:enabled="true"
+        android:icon="@drawable/ic_music_note_black_24dp"
+        android:shortcutId="music"
+        android:shortcutLongLabel="@string/longShortcut"
+        android:shortcutShortLabel="@string/shortShortcut">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetClass="com.wildcardenter.myfab.for_jahan.activities.MusicActivity"
+            android:targetPackage="com.wildcardenter.myfab.for_jahan" />
+
+    </shortcut>
+
+</shortcuts>
