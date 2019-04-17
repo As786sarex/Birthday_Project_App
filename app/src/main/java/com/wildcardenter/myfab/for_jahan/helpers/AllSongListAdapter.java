@@ -20,9 +20,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 
-/**
- * Created by rahul on 6/8/2017.
- */
+
 
 public class AllSongListAdapter extends BaseAdapter {
 

@@ -8,9 +8,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-/**
- * Created by rahul on 6/22/2017.
- */
 
 public class AllSongs extends Fragment {
     @Nullable

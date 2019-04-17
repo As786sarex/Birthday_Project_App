@@ -16,9 +16,7 @@ import android.util.DisplayMetrics;
 
 import java.util.List;
 
-/**
- * Created by rahul on 6/27/2017.
- */
+
 
 public class BitmapPalette {
     public static Bitmap mediumBitmap, smallBitmap, blurredBitmap;

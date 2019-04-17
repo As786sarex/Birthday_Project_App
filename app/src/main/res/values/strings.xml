@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Birthday</string>
+    <string name="app_name">Happy Birthday</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">Android Studio</string>
@@ -9,8 +9,6 @@
     <string name="camera">Camera</string>
     <string name="Music">Music</string>
     <string name="Assistant">Assistant</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="Music_menu">Music For You</string>
     <string name="Your_photos">Your Photos</string>
     <string name="your_assistant">Your Assistant</string>
@@ -39,5 +37,46 @@
 
         The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.\n\n
         Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.\n\n</string>
+    <string name="myreqmsg">
+        Now it`s time for some honest confession.\n\n
+        I have created this application because I believed that I should give you something on your Birthday and you mean a lot to me.\n\n
+        Don`t take my work as something negative because I did not created it to mean something negative.\n
+        If you honestly think that I`ve done something for you and you appreciate my work give me an honest `Thank You`.\n
+        And if you want to give me coffee treat for my work i will not say `No`.\n\n
+        Although I would very much prefer the coffee treat....😇😋
+
+    </string>
+    <string name="assistantDialogMsg">
+        I have tried to make a Personal Assistant for you. It is still in Beta. It was a part of my Final Year Project but they`ve rejected it.\n\n
+        I had limited time so that is why this Assistant is not that Smart enough. But it can still answer to normal `Hi` ,`Hello` type of conversation.
+        It can also open websites if you tell her to open that.\n\nI know you`ll not enjoy it much. But it is still there.😅😅
+    </string>
+    <string name="musicDialogMsg">I have realized that you love listening to Music.\nSo.. here is a Music Player for you.I don`t know what type of songs you like so it does not come with any preloaded songs.\nYou know what`s special about this Music Player?? This Music Player is exclusive to you and only you have access to this Player.\n\n
+        \tI wanted to implement some more features like playlist,album sorting and notification control but due to lack of time i have not been able complete
+        these implementation. But I think you`ll like this player because I`ve spent huge time to make this Player.\nImplementing it on Android Oreo(8.1) was a huge deal.\nI`ve added a shortcut to this player.Long press on launcher icon and you`ll see the shortcut.\n\nAt the end I`ll just
+        say `TRY PLAYING SOME MUSIC ON IT`.😜😜
+
+    </string>
+    <string name="happyBirthdayMsg">
+        First of all I wish you a very Happy Birthday and Many Many happy returns of the day!!!\n\n
+        I`ve came to realize that you people very much believe in posting photo collage on Birthdays.
+        So I`ve designed this swipe card styled photo gallery for you on your birthday.\n
+        You can also add new photos to this Gallery by pressing the + sign on the top right hand side corner.\n
+        You can also delete a existing card by touching the card on the top-right corner.\n\n
+        Some photos are collected from your status updates and some others from other peoples in case you want to know.\n
+    </string>
+    <string name="notAuthorizedDialogMsg">You are not authorized to see this side of the application as of now.\n
+    This page contains some messages and stories which you might not want to hear for now.\n\n
+        This page will be available when you`ll stop ignoring and start believing....😅😅🤭
+    </string>
+    <string name="happyBirthdayMsg1">
+        I`m giving you this application as a friend.\n
+        The password on the launcher screen is just for security measures.
+        </string>
+    <string name="happyBirthdayMsg2">**An Internet Connection is needed to view those cards as they are
+        fetched from server.\n
+        **Don`t laugh at this application as i might revoke access to this application for that.\n
+        **If you have any question you can ask me.\n
+        **And one more thing....You can`t take a screenshot of this app(except the music player).😂😂😇😇</string>
 
 </resources>

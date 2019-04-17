@@ -6,12 +6,16 @@ import android.app.NotificationManager;
 import android.content.SharedPreferences;
 import android.os.Build;
 import android.support.annotation.NonNull;
+import android.widget.Toast;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.wildcardenter.myfab.for_jahan.helpers.SharedPrefHelper;
+
+import java.math.BigInteger;
 
 public class App extends Application {
     public static final String CHANNEL_ID = "Music_Channel";
@@ -23,6 +27,7 @@ public class App extends Application {
         createNotificationChannel();
         setSharedPrefData();
     }
+
 
     private void setSharedPrefData() {
         DatabaseReference reference = FirebaseDatabase.getInstance().getReference("password");
@@ -45,9 +50,27 @@ public class App extends Application {
 
             }
         });
+        SharedPrefHelper sharedPrefHelper=new SharedPrefHelper(this);
+        FirebaseDatabase.getInstance().getReference("authorization").addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                boolean isAuthorized=false;
+                for (DataSnapshot snapshot: dataSnapshot.getChildren()){
+                    isAuthorized= (boolean) snapshot.getValue();
+                }
+                sharedPrefHelper.setData(SharedPrefHelper.AUTHORIZATION_KEY,isAuthorized,SharedPrefHelper.TYPE_BOOLEAN);
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
+
 
 
     }
+
 
     private void createNotificationChannel() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
@@ -57,5 +80,6 @@ public class App extends Application {
             manager.createNotificationChannel(channel);
         }
     }
+
 }
 

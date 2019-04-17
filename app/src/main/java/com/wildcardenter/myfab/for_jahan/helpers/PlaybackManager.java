@@ -16,9 +16,6 @@ import com.wildcardenter.myfab.for_jahan.SongService;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-/**
- * Created by rahul on 5/31/2017.
- */
 
 public class PlaybackManager {
     public static final String songPref = "songPref";

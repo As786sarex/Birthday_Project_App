@@ -18,7 +18,7 @@ public class AssistantChatView extends RecyclerView.Adapter<AssistantChatView.As
     public static final int MSG_TYPE_LEFT=0;
     public static final int MSG_TYPE_RIGHT=1;
     private Context context;
-    private  ArrayList<AssistantMassageModel> arrayList=new ArrayList<>();
+    private  ArrayList<AssistantMassageModel> arrayList;
 
     public AssistantChatView(Context context, ArrayList<AssistantMassageModel> arrayList) {
         this.context = context;

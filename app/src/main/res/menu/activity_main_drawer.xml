@@ -2,33 +2,47 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
+    <item android:title="Some Items For You" android:checkable="true">
 
-    <group android:checkableBehavior="single">
-        <item
-            android:id="@+id/nav_camera"
-            android:icon="@drawable/ic_photo_library_black_24dp"
-            android:title="@string/Your_photos" />
-        <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_music_note_black_24dp"
-            android:title="@string/Music_menu" />
-        <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_settings_voice_black_24dp"
-            android:title="@string/your_assistant" />
-
-    </group>
-
-    <item android:title="Communicate">
         <menu>
+            <group android:checkableBehavior="single">
+            <item
+                android:id="@+id/nav_camera"
+                android:icon="@drawable/ic_photo_library_black_24dp"
+                android:title="@string/Your_photos" />
+            <item
+                android:id="@+id/nav_gallery"
+                android:icon="@drawable/ic_music_note_black_24dp"
+                android:title="@string/Music_menu" />
+            <item
+                android:id="@+id/nav_slideshow"
+                android:icon="@drawable/ic_settings_voice_black_24dp"
+                android:title="@string/your_assistant" />
+            </group>
+
+        </menu>
+    </item>
+
+    <item android:title="Messages for You">
+        <menu>
+            <group android:checkableBehavior="single">
             <item
                 android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
-                android:title="Share" />
+                android:icon="@drawable/ic_lock_outline_black_24dp"
+                android:title="A Secret Message For You" />
             <item
                 android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
-                android:title="Send" />
+                android:icon="@drawable/ic_request"
+                android:title="From Me And A Request" />
+            </group>
+        </menu>
+    </item>
+    <item android:title="Utils">
+        <menu>
+            <item
+                android:id="@+id/exit_App"
+                android:icon="@drawable/ic_exit_to_app_black_24dp"
+                android:title="Exit From The App" />
         </menu>
     </item>
 

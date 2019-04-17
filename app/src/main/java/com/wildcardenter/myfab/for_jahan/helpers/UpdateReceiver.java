@@ -15,9 +15,6 @@ import com.wildcardenter.myfab.for_jahan.SongService;
 
 import static android.content.Context.AUDIO_SERVICE;
 
-/**
- * Created by absolutezero on 10/7/17.
- */
 
 public class UpdateReceiver extends AppWidgetProvider {
     public static final String ACTION_PLAY = "com.rahulk11.randomplayer.ACTION_PLAY";

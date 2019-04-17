@@ -23,9 +23,6 @@ import java.io.IOException;
 
 import static com.wildcardenter.myfab.for_jahan.helpers.NotificationHandler.notifID;
 
-/**
- * Created by rahul on 6/9/2017.
- */
 
 public class SongService extends Service implements MediaPlayer.OnCompletionListener, MediaPlayer.OnPreparedListener {
     public final static String ACTION_PLAY = "PLAY";

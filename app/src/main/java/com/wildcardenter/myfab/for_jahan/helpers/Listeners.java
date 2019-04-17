@@ -2,10 +2,6 @@ package com.wildcardenter.myfab.for_jahan.helpers;
 
 import android.media.MediaPlayer;
 
-/**
- * Created by Rahul Kumar on 6/29/2017.
- */
-
 public class Listeners {
 
     public interface LoadSongListener {

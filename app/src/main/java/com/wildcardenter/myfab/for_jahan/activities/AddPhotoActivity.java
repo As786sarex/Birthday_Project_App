@@ -50,12 +50,13 @@ public class AddPhotoActivity extends AppCompatActivity {
         uploadBtn = findViewById(R.id.AddImgUpload);
         storageReference = FirebaseStorage.getInstance().getReference("Added_Img");
         uploadBtn.setOnClickListener(v -> {
-            String title = addImgTitle.getText().toString().trim();
-            String message = addImgMessage.getText().toString().trim();
+            String title = addImgTitle.getText().toString();
+            String message = addImgMessage.getText().toString();
             if (!title.isEmpty() && !message.isEmpty()) {
                 uploadImg(title, message);
             } else {
-                Toasty.warning(AddPhotoActivity.this, "Fields Required", Toast.LENGTH_SHORT, true);
+                Toasty.warning(AddPhotoActivity.this, "Fields Required",
+                        Toast.LENGTH_SHORT, true).show();
             }
         });
         cancelBtn.setOnClickListener(v -> {

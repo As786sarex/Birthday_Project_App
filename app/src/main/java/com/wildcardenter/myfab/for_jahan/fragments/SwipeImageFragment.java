@@ -126,7 +126,7 @@ public class SwipeImageFragment extends Fragment implements CardStackListener {
           List<Spot> newList = new ArrayList<Spot>() {{
               addAll(adapter.getSpots());
               addAll(createSpots());
-          }};
+      *+    }};
           SpotDiffCallback callback = new SpotDiffCallback(oldList, newList);
           DiffUtil.DiffResult result = DiffUtil.calculateDiff(callback);
           adapter.setSpots(newList);

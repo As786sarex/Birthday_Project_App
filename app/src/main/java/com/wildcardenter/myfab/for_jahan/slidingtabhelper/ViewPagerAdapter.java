@@ -9,10 +9,6 @@ import com.wildcardenter.myfab.for_jahan.PlayLists;
 
 
 
-/**
- * Created by rahul on 6/22/2017.
- */
-
 public class ViewPagerAdapter extends FragmentStatePagerAdapter {
 
     CharSequence tabTitles[];

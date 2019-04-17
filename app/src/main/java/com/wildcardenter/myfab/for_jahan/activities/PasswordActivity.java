@@ -18,7 +18,7 @@ public class PasswordActivity extends AppCompatActivity {
         SharedPreferences preferences = getApplicationContext().getSharedPreferences("MySharedData", MODE_PRIVATE);
 
 
-        passcodeView.setLocalPasscode(preferences.getString("myKey", "1111"));
+        passcodeView.setLocalPasscode(preferences.getString("myKey", "1704"));
         passcodeView.setListener(new PasscodeView.PasscodeViewListener() {
             @Override
             public void onFail() {

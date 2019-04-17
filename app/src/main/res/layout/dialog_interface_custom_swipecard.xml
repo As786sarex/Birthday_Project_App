@@ -11,8 +11,8 @@
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="160dp"
-            android:src="@drawable/happybirthdaydialog"
+            android:layout_height="200dp"
+            android:src="@drawable/birthday_dialog_ig"
             android:scaleType="fitXY"/>
 
         <android.support.v4.widget.NestedScrollView
@@ -27,25 +27,59 @@
                 android:layout_marginTop="20dp"
                 android:orientation="vertical">
                 <com.wildcardenter.myfab.for_jahan.customViews.DialogStyledTextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:paddingTop="10dp"
-                    android:paddingStart="10dp"
-                    android:paddingEnd="10dp"
-                    android:paddingBottom="10dp"
-                    android:textSize="22sp"
-                    android:textColor="#A51560"
-                    android:text="Wishing You A Very Happy Birthday"
-                    android:layout_gravity="center_horizontal"/>
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="10dp"
+                android:textSize="21sp"
+                android:textColor="#A51560"
+                android:text="Wishing You A Very Happy Birthday"
+                android:layout_gravity="center_horizontal"/>
+
                 <com.wildcardenter.myfab.for_jahan.customViews.DialogStyledTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingTop="20dp"
                     android:paddingStart="20dp"
                     android:paddingEnd="20dp"
-                    android:textSize="16sp"
-                    android:text="@string/Random_lorem"
+                    android:textSize="18sp"
+                    android:text="@string/happyBirthdayMsg"
                     android:textColor="@color/text_black"/>
+                <com.wildcardenter.myfab.for_jahan.customViews.DialogStyledTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:textSize="18sp"
+                    android:text="@string/happyBirthdayMsg1"
+                    android:textColor="#2A81A0"/>
+                <com.wildcardenter.myfab.for_jahan.customViews.DialogStyledTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:textSize="18sp"
+                android:lines="1"
+                android:text="---------------NB----------------"
+                android:textAlignment="center"
+                android:textColor="#DF0044"/>
+                <com.wildcardenter.myfab.for_jahan.customViews.DialogStyledTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:textSize="18sp"
+                    android:text="@string/happyBirthdayMsg2"
+                    android:textAlignment="center"
+                    android:textColor="#DF0044"/>
 
             </LinearLayout>
         </android.support.v4.widget.NestedScrollView>

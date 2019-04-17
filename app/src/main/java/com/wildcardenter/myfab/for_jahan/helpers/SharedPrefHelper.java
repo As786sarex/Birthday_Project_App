@@ -13,6 +13,7 @@ public class SharedPrefHelper {
     public static final String SWIPECARD_KEY="isFirstSwipeCard";
     public static final String PLAYER_KEY="isFirstMusicPlayer";
     public static final String ASSSTANT_KEY="isFirstAssistant";
+    public static final String AUTHORIZATION_KEY="isAuthorized";
 
     private SharedPreferences sharedPreferences;
 

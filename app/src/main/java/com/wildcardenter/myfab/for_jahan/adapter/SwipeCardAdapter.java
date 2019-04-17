@@ -56,7 +56,7 @@ public class SwipeCardAdapter extends RecyclerView.Adapter<SwipeCardAdapter.Swip
         swipeCardViewHolder.desc.setText(desc);
         swipeCardViewHolder.removeBtn.setOnClickListener(v->{
             new AlertDialog.Builder(context).setTitle("Delete Card??")
-                    .setIcon(R.drawable.icon_birthday)
+                    .setIcon(R.drawable.random)
                     .setMessage("You're about to delete one card.\nAre You Sure?")
                     .setPositiveButton("Delete", (dialog, which) ->{
                         FirebaseDatabase.getInstance().getReference().child("Added_Img").child(currentItem.getPostId()).removeValue();

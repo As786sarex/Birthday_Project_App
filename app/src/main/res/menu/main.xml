@@ -1,12 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-    <item
-        android:id="@+id/action_settings"
-        android:orderInCategory="100"
-        android:title="@string/action_secret_massage"
-        app:showAsAction="never"
-        android:icon="@drawable/ic_security_black_24dp" />
     <item android:id="@+id/addPhotoAct"
         android:title="Add Photo"
         app:showAsAction="ifRoom"

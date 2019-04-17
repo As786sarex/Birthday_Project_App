@@ -1,15 +1,19 @@
 package com.wildcardenter.myfab.for_jahan.fragments;
 
+import android.Manifest;
 import android.app.AlertDialog;
 import android.arch.lifecycle.LifecycleOwner;
 import android.arch.lifecycle.LiveData;
 import android.arch.lifecycle.Observer;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
 import android.support.annotation.NonNull;
+import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -43,6 +47,7 @@ import static com.wildcardenter.myfab.for_jahan.helpers.SharedPrefHelper.TYPE_BO
 public class AssistantFragment extends Fragment implements AIListener{
 
     private static final String TAG = "AssistantFragment";
+    private static final int RECORD_REQUEST_CODE = 123;
 
     AIService aiService;
     RecyclerView recyclerView;
@@ -105,10 +110,17 @@ public class AssistantFragment extends Fragment implements AIListener{
                 AlertDialog.Builder builder = new AlertDialog.Builder(getContext(), R.style.Theme_AppCompat_Light_Dialog)
                         .setPositiveButton("OK", null)
                         .setCancelable(false)
-                        .setView(R.layout.dialog_interface_custom_music);
+                        .setView(R.layout.dialog_interface_custom_assistant);
                 builder.create().show();
                 helper.setData(ASSSTANT_KEY, true, TYPE_BOOLEAN);
             }
+        }
+        int permission = ContextCompat.checkSelfPermission(getContext(),
+                Manifest.permission.RECORD_AUDIO);
+
+        if (permission != PackageManager.PERMISSION_GRANTED) {
+            Log.i(TAG, "Permission to record denied");
+            makeRequest();
         }
 
         return view;
@@ -186,6 +198,29 @@ public class AssistantFragment extends Fragment implements AIListener{
         }
 
         super.onDestroy();
+    }
+    protected void makeRequest() {
+        ActivityCompat.requestPermissions(getActivity(),
+                new String[]{Manifest.permission.RECORD_AUDIO},
+                RECORD_REQUEST_CODE);
+    }
+    @Override
+    public void onRequestPermissionsResult(int requestCode,
+                                           @NonNull String permissions[], @NonNull int[] grantResults) {
+        switch (requestCode) {
+            case RECORD_REQUEST_CODE: {
+
+                if (grantResults.length == 0
+                        || grantResults[0] !=
+                        PackageManager.PERMISSION_GRANTED) {
+
+                    Log.i(TAG, "Permission has been denied by user");
+                } else {
+                    Log.i(TAG, "Permission has been granted by user");
+                }
+
+            }
+        }
     }
 
 
